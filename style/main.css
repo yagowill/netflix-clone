@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bebas';
+    src: url(../font/bebas/Bebas-Regular.ttf);
+}
+
+:root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backgroun-color-black {
+    background-color: var(--black);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo {
+    margin-left: 5px;
+    font-family: 'bebas', 'Arial Black', sans-serif;
+    font-size: 60px;
+    color: var(--red);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.filme-principal {
+    background: linear-gradient(to right, rgba(0,0,0,100), rgba(0,0,0,.5) 100%), url('/img/bat-banner.jpg');
+    height: 400px;
+    background-size: cover;
+    font-size: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aprovacao {
+    color: green;
+    font-weight: bold;
+}
+.detalhes {
+    color: #aaa;
+}
+.classificacao {
+    background-color: #F26202;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.genero::before, .genero::after {
+    content:" " "\2022" " " ;
+}
+.mini-box {
+    border: solid 1px #aaa;
+    color: #fff;
+    padding: 1px 2px;
+    background-color: rgba(41, 41, 41, 0.253);
+}
+
+.filme-principal .descricao {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #aaa;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 14px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+a {
+    text-decoration: none;
+}
+
+.filme-principal .container {
+    margin-left: 20px;
+    width: 70%;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
